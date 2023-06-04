@@ -1,0 +1,83 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  position: relative;
+}
+
+.promo__upper {
+  min-height: 302px;
+  background-color: rgba(104, 183, 56, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo__upper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 302px;
+  opacity: 0.85;
+  z-index: -1;
+  background-image: url("../img/index/background-cat-mobile.jpg");
+}
+
+.promo__upper-title {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: @white;
+  text-align: center;
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+
+.promo__upper-description {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: @white;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.promo__lower {
+  min-height: 178px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.promo__lower-image {
+  position: absolute;
+  top: -135px;
+  left: 20px;
+  z-index: 1;
+}
+
+.promo__lower-button {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @white;
+  text-transform: uppercase;
+  width: 280px;
+  min-height: 40px;
+  background-color: @green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
