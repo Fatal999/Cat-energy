@@ -28,25 +28,25 @@
         <li class="main-nav__logo-item">
           <button class="main-nav__logo-toggle" type="button">
             <svg class="main-nav__logo-toggle-icon" width="24" height="16">
-              <use xlink:href="./img/sprite.svg#toggle-icon"></use>
+              <use xlink:href="./img/sprite.svg#toggle"></use>
             </svg>
             <span class="visually-hidden">Открыть меню.</span>
           </button>
         </li>
       </ul>
       <ul class="main-nav__user-list">
-        <li class="main-nav__user-item">
-          <a class="main-nav__user-link" href="index.html" aria-label="Главная страница">Главная</a>
+        <li class="main-nav__user-item main-nav__user-item--active">
+          <a class="main-nav__user-link" href="#" aria-label="Главная страница">Главная</a>
         </li>
         <li class="main-nav__user-item">
           <a class="main-nav__user-link" href="catalog.html" aria-label="Каталог">Каталог продукции</a>
         </li>
-        <li class="main-nav__user-item main-nav__user-item--active">
-          <a class="main-nav__user-link" href="#" aria-label="Форма">Подбор программы</a>
+        <li class="main-nav__user-item">
+          <a class="main-nav__user-link" href="form.html" aria-label="Форма">Подбор программы</a>
         </li>
       </ul>
       <ul class="main-nav__mobile-list">
-        <li class="main-nav__mobile-item">
+        <li class="main-nav__mobile-item main-nav__mobile-item--first">
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/icons/desktop-logo.svg">
             <source media="(min-width: 768px)" srcset="./img/icons/tablet-logo.svg">
@@ -55,19 +55,19 @@
           </picture>
           <button class="main-nav__logo-close" type="button">
             <svg class="main-nav__logo-close-icon" width="25" height="25">
-              <use xlink:href="./img/sprite.svg#close-icon"></use>
+              <use xlink:href="./img/sprite.svg#close"></use>
             </svg>
             <span class="visually-hidden">Закрыть меню.</span>
           </button>
         </li>
         <li class="main-nav__mobile-item">
-          <a class="main-nav__mobile-link" href="index.html" aria-label="Главная страница">Главная</a>
+          <a class="main-nav__mobile-link" href="#" aria-label="Главная страница">Главная</a>
         </li>
         <li class="main-nav__mobile-item">
           <a class="main-nav__mobile-link" href="catalog.html" aria-label="Каталог">Каталог продукции</a>
         </li>
         <li class="main-nav__mobile-item">
-          <a class="main-nav__mobile-link" href="#" aria-label="Форма">Подбор программы</a>
+          <a class="main-nav__mobile-link" href="form.html" aria-label="Форма">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -79,16 +79,16 @@
       <form class="program__form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="program__form-personal">
           <div class="program__form-personal-wrapper">
-            <label class="program__form-personal-name" for="name">Имя:*</label>
+            <label class="program__form-personal-description" for="name">Имя:*</label>
             <input class="program__form-personal-field" id="name" name="name" type="text" placeholder="Барсик" required>
           </div>
           <div class="program__form-personal-wrapper">
-            <label class="program__form-personal-weight" for="weight">Вес (кг):*</label>
-            <input class="program__form-personal-field" id="weight" name="weight" type="text" placeholder="7" required>
+            <label class="program__form-personal-description" for="weight">Вес (кг):*</label>
+            <input class="program__form-personal-field program__form-personal-field-weight" id="weight" name="weight" type="text" placeholder="7" required>
           </div>
           <div class="program__form-personal-wrapper">
-            <label class="program__form-personal-age" for="age">Возраст (лет):</label>
-            <input class="program__form-personal-field" id="age" name="age" type="text" placeholder="7" required>
+            <label class="program__form-personal-description" for="age">Возраст (лет):</label>
+            <input class="program__form-personal-field program__form-personal-field-age" id="age" name="age" type="text" placeholder="7" required>
           </div>
         </div>
         <div class="program__form-weight">
@@ -112,7 +112,7 @@
         <div class="program__form-contacts">
           <h2 class="program__form-contacts-title">Контактные данные (владельца кота)</h2>
           <div class="program__form-contacts-wrapper">
-            <label class="program__form-contacts-email" for="mail">E-mail:*</label>
+            <label class="program__form-contacts-description" for="mail">E-mail:*</label>
             <input class="program__form-contacts-field" id="mail" name="mail" type="email"
               placeholder="kuklachev@gmail.com" required>
             <svg class="program__form-contacts-icon" width="17" height="13">
@@ -120,11 +120,11 @@
             </svg>
           </div>
           <div class="program__form-contacts-wrapper">
-            <label class="program__form-contacts-phone" for="phone">Телефон:*</label>
-            <input class="program__form-contacts-field" id="phone" name="phone" type="text"
+            <label class="program__form-contacts-description" for="phone">Телефон:*</label>
+            <input class="program__form-contacts-field program__form-contacts-field-phone" id="phone" name="phone" type="text"
               placeholder="8 (960) 900-60-90" required>
             <svg class="program__form-contacts-icon" width="15" height="15">
-              <use xlink:href="./img/sprite.svg#phone"></use>
+              <use xlink:href="./img/sprite.svg#phone-catalog"></use>
             </svg>
           </div>
         </div>
@@ -136,7 +136,7 @@
         </div>
         <div class="program__form-add">
           <h4 class="program__form-add-title">Дополнительно</h4>
-          <div class="program__form-add-wrapper">
+          <div class="program__form-add-wrapper program__form-weight-wrapper-first">
             <input class="program__form-add-input visually-hidden" type="checkbox" id="sweetener" name="add" checked>
             <label class="program__form-add-value" for="sweetener"><span
                 class="control-mark-checkbox"></span>Сахарозаменитель</label>
@@ -163,7 +163,7 @@
       </form>
     </section>
     <section class="map">
-      <div class="map__wrapper">
+      <div class="map__wrapper map__wrapper--add">
         <h5 class="map__wrapper-title">Приглашаем к сотрудничеству дилеров!</h5>
         <p class="map__wrapper-adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>

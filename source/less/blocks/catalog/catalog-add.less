@@ -1,0 +1,130 @@
+.catalog-add {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.catalog-add__title {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 25px;
+  margin-bottom: 36px;
+  margin-left: 20px;
+}
+
+.catalog-add__title::before {
+  position: absolute;
+  content: "";
+  width: 53px;
+  height: 3px;
+  background-color: @green;
+  top: 40px;
+  right: 0;
+}
+
+.catalog-add__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-add__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.catalog-add__item-wrapper {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.catalog-add__item-title {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-add__item-title::before {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: #cdcdcd;
+  top: 0;
+  left: 20px;
+}
+
+.catalog-add__item-wrapper-description {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.catalog-add__item-button {
+  margin-left: 20px;
+  margin-bottom: 19px;
+}
+
+.catalog-add__gift {
+  margin-top: 35px;
+  width: 280px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(104, 183, 56, 0.85);
+  position: relative;
+}
+
+.catalog-add__gift::before {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 288px;
+  background-image: url("../img/catalog/background-cat-catalog-mobile.jpg");
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.catalog-add__gift::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: #cdcdcd;
+  top: -38px;
+  left: 0;
+}
+
+.catalog-add__gift-icon {
+  fill: @white;
+  margin-top: 60px;
+}
+
+.catalog-add__gift-description {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 45px;
+  margin-bottom: 43px;
+  width: 161px;
+  color: @white;
+  text-align: center;
+}

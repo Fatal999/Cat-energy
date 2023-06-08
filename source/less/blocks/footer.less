@@ -5,8 +5,12 @@
 }
 
 .main-footer__logo {
-  margin: 40px auto 20px auto;
   position: relative;
+  margin-left: 97px;
+}
+
+.main-footer__logo-icon {
+  margin-top: 40px;
 }
 
 .main-footer__logo::before {
@@ -15,8 +19,8 @@
   width: 281px;
   height: 1px;
   background-color: #d9d9d9;
-  top: 74px;
-  left: 20px;
+  top: 35px;
+  left: -80px;
 }
 
 .main-footer__logo::after {
@@ -25,18 +29,23 @@
   width: 281px;
   height: 1px;
   background-color: #d9d9d9;
-  top: 136px;
-  left: 20px;
+  top: 96px;
+  left: -80px;
 }
 
 .main-footer__list {
   list-style-type: none;
-  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 62px;
+}
+
+.main-footer__item:not(:last-child) {
+  margin-right: 28px;
 }
 
 .main-footer__item-link {
@@ -58,10 +67,11 @@
   font-size: 16px;
   line-height: 20px;
   color: #444444;
-  margin-top: 27px;
+  margin-bottom: 40px;
   margin-left: 20px;
 }
 
 .main-footer__wrapper-icon {
   margin-right: 20px;
+  margin-bottom: 20px;
 }
