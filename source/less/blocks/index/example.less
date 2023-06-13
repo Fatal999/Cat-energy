@@ -3,6 +3,11 @@
   flex-direction: column;
   background-color: #eaeaea;
   margin-top: 25px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
 }
 
 .example__title {
@@ -13,6 +18,30 @@
   margin-top: 25px;
   margin-bottom: 40px;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 90px;
+    margin-bottom: 63px;
+    margin-left: 31px;
+  }
+}
+
+.example__title::before {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  position: absolute;
+  content: "";
+  width: 768px;
+  height: 1px;
+  background-color: #e6e6e6;
+  top: 50px;
+  left: 0;
+  }
 }
 
 .example__description {
@@ -24,27 +53,48 @@
   margin-top: 0;
   margin-bottom: 20px;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 54px;
+    margin-left: 31px;
+  }
 }
 
 .example__wrapper {
   display: flex;
   justify-content: space-between;
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
 }
 
 .example__wrapper-add {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 124px;
+  justify-content: center;
+  width: 162px;
   position: relative;
 }
 
 .example__wrapper-add:first-child {
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 31px;
+  }
 }
 
 .example__wrapper-add:last-child {
   margin-right: 20px;
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    margin-left: 42px;
+  }
 }
 
 .example__wrapper-add-number {
@@ -55,6 +105,13 @@
   margin-top: 15px;
   margin-bottom: 8px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 10px;
+  }
 }
 
 .example__wrapper-add-description {
@@ -67,6 +124,12 @@
   text-align: center;
   width: 77px;
   text-transform: lowercase;
+
+  @media (min-width: @tablet-width) {
+    width: 120px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__wrapper-add-icon {
@@ -74,6 +137,11 @@
   fill: #cdcdcd;
   top: 0;
   left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
 }
 
 .example__expenses {
@@ -86,6 +154,16 @@
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  line-height: 20px;
+  text-align: right;
+  width: 174px;
+  position: absolute;
+  top: 335px;
+  right: 30px;
+  }
 }
 
 .example__wrapper-cat {
@@ -93,6 +171,12 @@
   justify-content: center;
   margin-bottom: 40px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+  margin-top: 90px;
+  background: linear-gradient(to top, #eaeaea 70%, transparent 30px);
+  margin-bottom: 0;
+  }
 }
 
 .example__wrapper-cat::before {
@@ -105,6 +189,12 @@
   top: 0;
   left: 158px;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    height: 512px;
+    top: 0;
+    left: 382px;
+    }
 }
 
 .example__wrapper-cat::after {
@@ -118,12 +208,23 @@
   top: 108px;
   left: 140px;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    top: 236px;
+    left: 364px;
+    }
 }
 
 .example__wrapper-cat-image {
   width: 140px;
   height: 250px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+    height: 512px;
+    margin-bottom: 95px;
+  }
 }
 
 .example__wrapper-cat-icon {
@@ -133,4 +234,9 @@
   cursor: pointer;
   fill: #666666;
   z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    top: 247px;
+    left: 372px;
+  }
 }

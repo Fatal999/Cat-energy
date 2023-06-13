@@ -2,11 +2,19 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
 }
 
 .map__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    min-height: 199px;
+  }
 }
 
 .map__wrapper-title {
@@ -16,6 +24,13 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 26px 24px 26px 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+    margin: 60px 70px 0 70px;
+  }
 }
 
 .map__wrapper-adress {
@@ -25,16 +40,36 @@
   line-height: 20px;
   color: @gray;
   margin: 26px 20px 26px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+    margin: 60px 70px 0 0;
+  }
 }
 
 .map__image {
   display: block;
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
 }
 
 .map__icon {
   position: absolute;
   top: 281px;
   left: 134px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 113px;
+    height: 106px;
+    top: 340px;
+    left: 334px;
+  }
 }
 
 .map__wrapper--add {

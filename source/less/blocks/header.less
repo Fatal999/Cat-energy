@@ -11,10 +11,20 @@
   align-items: center;
   justify-content: space-between;
   min-height: 65px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__logo-image {
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+    width: 174px;
+    height: 52px;
+  }
 }
 
 .main-nav__logo-toggle {
@@ -26,6 +36,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__logo-toggle-icon {
@@ -34,6 +48,47 @@
 
 .main-nav__user-list {
   display: none;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+.main-nav__user-item:not(:last-child) {
+  @media (min-width: @tablet-width) {
+   margin-right: 34px;
+  }
+}
+
+.main-nav__user-item:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+   }
+}
+
+.main-nav__user-item--active::before {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 2px;
+  background-color: @green;
+  bottom: 5px;
+  left: 298px;
+}
+
+.main-nav__user-link {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: @black;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .main-nav__mobile-list {

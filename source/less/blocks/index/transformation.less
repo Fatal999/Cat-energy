@@ -11,11 +11,17 @@
   background-color: @white-gray;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    min-height: 372px;
+  }
 }
 
 .transformation__slim-wrapper {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .transformation__slim-wrapper-add {
@@ -27,6 +33,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    order: 2;
+    position: absolute;
+    top: 92px;
+    left: 446px;
+    margin-left: 0;
+  }
 }
 
 .transformation__slim-title {
@@ -38,6 +54,15 @@
   margin-top: 30px;
   margin-left: 19px;
   margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    order: 1;
+    margin-top: 77px;
+    margin-left: 53px;
+    margin-bottom: 24px;
+  }
 }
 
 .transformation__slim-description {
@@ -51,6 +76,22 @@
   margin-bottom: 42px;
   text-align: left;
   width: 227px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-left: 53px;
+    margin-bottom: 52px;
+    width: 340px;
+  }
+}
+
+.transformation__slim-wrapper-icon {
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 194px;
+  }
 }
 
 .transformation__slim-catalog {
@@ -65,10 +106,18 @@
   text-decoration: none;
   position: relative;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-left: 52px;
+    margin-bottom: 57px;
+  }
 }
 
 .transformation__slim-catalog-icon {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .transformation__slim-catalog:before {
@@ -79,6 +128,10 @@
   background-color: #d9d9d9;
   top: -19px;
   left: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .transformation__muscle {
@@ -88,11 +141,18 @@
   background-color: @white-gray;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    min-height: 372px;
+    margin-top: 30px;
+  }
 }
 
 .transformation__muscle-wrapper {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .transformation__muscle-wrapper-add {
@@ -101,11 +161,26 @@
   border-radius: 50%;
   background-color: @green;
   margin-left: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    order: 2;
+    position: absolute;
+    top: 92px;
+    left: 446px;
+    margin-left: 0;
+  }
 }
 
 .transformation__muscle-wrapper-icon {
   margin-top: 10px;
   margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+   width: 268px;
+   height: 112px;
+  }
 }
 
 .transformation__muscle-title {
@@ -117,6 +192,15 @@
   margin-top: 30px;
   margin-left: 19px;
   margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    order: 1;
+    margin-top: 77px;
+    margin-left: 53px;
+    margin-bottom: 24px;
+  }
 }
 
 .transformation__muscle-description {
@@ -130,10 +214,19 @@
   margin-bottom: 42px;
   text-align: left;
   width: 227px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-left: 53px;
+    margin-bottom: 52px;
+    width: 340px;
+  }
 }
 
 .transformation__muscle-catalog-icon {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .transformation__muscle-catalog {
@@ -148,6 +241,14 @@
   text-decoration: none;
   position: relative;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-left: 52px;
+    margin-bottom: 57px;
+  }
 }
 
 .transformation__muscle-catalog:before {
@@ -158,4 +259,9 @@
   background-color: #d9d9d9;
   top: -19px;
   left: 0;
+
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
