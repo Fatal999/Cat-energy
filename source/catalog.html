@@ -35,11 +35,19 @@
         </li>
       </ul>
       <ul class="main-nav__user-list">
-        <li class="main-nav__user-item main-nav__user-item--active">
-          <a class="main-nav__user-link" href="index.html" aria-label="Главная страница">Главная</a>
+        <li class="main-nav__user-item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/icons/desktop-logo.svg">
+            <source media="(min-width: 768px)" srcset="./img/icons/tablet-logo.svg">
+            <img class="main-nav__logo-image" src="./img/icons/mobile-logo.svg" width="191" height="37"
+              alt="Логотип Кэт Энерджи.">
+          </picture>
         </li>
         <li class="main-nav__user-item">
-          <a class="main-nav__user-link" href="#" aria-label="Каталог">Каталог продукции</a>
+          <a class="main-nav__user-link" href="#" aria-label="Главная страница">Главная</a>
+        </li>
+        <li class="main-nav__user-item main-nav__user-item--catalog">
+          <a class="main-nav__user-link" href="catalog.html" aria-label="Каталог">Каталог продукции</a>
         </li>
         <li class="main-nav__user-item">
           <a class="main-nav__user-link" href="form.html" aria-label="Форма">Подбор программы</a>
@@ -61,10 +69,10 @@
           </button>
         </li>
         <li class="main-nav__mobile-item">
-          <a class="main-nav__mobile-link" href="#" aria-label="Главная страница">Главная</a>
+          <a class="main-nav__mobile-link" href="index.html" aria-label="Главная страница">Главная</a>
         </li>
         <li class="main-nav__mobile-item">
-          <a class="main-nav__mobile-link" href="catalog.html" aria-label="Каталог">Каталог продукции</a>
+          <a class="main-nav__mobile-link" href="#" aria-label="Каталог">Каталог продукции</a>
         </li>
         <li class="main-nav__mobile-item">
           <a class="main-nav__mobile-link" href="form.html" aria-label="Форма">Подбор программы</a>
@@ -72,6 +80,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="main-wrapper">
     <section class="catalog-main">
       <h1 class="catalog-main__title">Каталог продукции</h1>
