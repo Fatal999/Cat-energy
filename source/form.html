@@ -43,13 +43,13 @@
               alt="Логотип Кэт Энерджи.">
           </picture>
         </li>
-        <li class="main-nav__user-item main-nav__user-item--active">
-          <a class="main-nav__user-link" href="#" aria-label="Главная страница">Главная</a>
+        <li class="main-nav__user-item">
+          <a class="main-nav__user-link" href="index.html" aria-label="Главная страница">Главная</a>
         </li>
         <li class="main-nav__user-item">
           <a class="main-nav__user-link" href="catalog.html" aria-label="Каталог">Каталог продукции</a>
         </li>
-        <li class="main-nav__user-item">
+        <li class="main-nav__user-item main-nav__user-item--form">
           <a class="main-nav__user-link" href="form.html" aria-label="Форма">Подбор программы</a>
         </li>
       </ul>
@@ -93,11 +93,13 @@
           </div>
           <div class="program__form-personal-wrapper">
             <label class="program__form-personal-description" for="weight">Вес (кг):*</label>
-            <input class="program__form-personal-field program__form-personal-field-weight" id="weight" name="weight" type="text" placeholder="7" required>
+            <input class="program__form-personal-field program__form-personal-field-weight" id="weight" name="weight"
+              type="text" placeholder="7" required>
           </div>
           <div class="program__form-personal-wrapper">
             <label class="program__form-personal-description" for="age">Возраст (лет):</label>
-            <input class="program__form-personal-field program__form-personal-field-age" id="age" name="age" type="text" placeholder="7" required>
+            <input class="program__form-personal-field program__form-personal-field-age" id="age" name="age" type="text"
+              placeholder="7" required>
           </div>
         </div>
         <div class="program__form-weight">
@@ -130,8 +132,8 @@
           </div>
           <div class="program__form-contacts-wrapper">
             <label class="program__form-contacts-description" for="phone">Телефон:*</label>
-            <input class="program__form-contacts-field program__form-contacts-field-phone" id="phone" name="phone" type="text"
-              placeholder="8 (960) 900-60-90" required>
+            <input class="program__form-contacts-field program__form-contacts-field-phone" id="phone" name="phone"
+              type="text" placeholder="8 (960) 900-60-90" required>
             <svg class="program__form-contacts-icon" width="15" height="15">
               <use xlink:href="./img/sprite.svg#phone-catalog"></use>
             </svg>
@@ -145,30 +147,32 @@
         </div>
         <div class="program__form-add">
           <h4 class="program__form-add-title">Дополнительно</h4>
-          <div class="program__form-add-wrapper program__form-weight-wrapper-first">
-            <input class="program__form-add-input visually-hidden" type="checkbox" id="sweetener" name="add" checked>
-            <label class="program__form-add-value" for="sweetener"><span
-                class="control-mark-checkbox"></span>Сахарозаменитель</label>
+          <div class="program__form-add-wrap">
+            <div class="program__form-add-wrapper program__form-weight-wrapper-first">
+              <input class="program__form-add-input visually-hidden" type="checkbox" id="sweetener" name="add" checked>
+              <label class="program__form-add-value" for="sweetener"><span
+                  class="control-mark-checkbox"></span>Сахарозаменитель</label>
+            </div>
+            <div class="program__form-add-wrapper">
+              <input class="program__form-add-input visually-hidden" type="checkbox" id="water" name="add">
+              <label class="program__form-add-value" for="water"><span class="control-mark-checkbox"></span>Питьевая
+                вода</label>
+            </div>
+            <div class="program__form-add-wrapper">
+              <input class="program__form-add-input visually-hidden" type="checkbox" id="milk" name="add">
+              <label class="program__form-add-value" for="milk"><span
+                  class="control-mark-checkbox"></span>Молоко</label>
+            </div>
+            <div class="program__form-add-wrapper">
+              <input class="program__form-add-input visually-hidden" type="checkbox" id="vitamins" name="add">
+              <label class="program__form-add-value" for="vitamins"><span
+                  class="control-mark-checkbox"></span>Витамины</label>
+            </div>
           </div>
-          <div class="program__form-add-wrapper">
-            <input class="program__form-add-input visually-hidden" type="checkbox" id="water" name="add">
-            <label class="program__form-add-value" for="water"><span class="control-mark-checkbox"></span>Питьевая
-              вода</label>
+          <div class="program__form-end">
+            <button class="program__form-end-button button" type="submit">Отправить заявку</button>
+            <p class="program__form-end-text">* — Обязательные поля</p>
           </div>
-          <div class="program__form-add-wrapper">
-            <input class="program__form-add-input visually-hidden" type="checkbox" id="milk" name="add">
-            <label class="program__form-add-value" for="milk"><span class="control-mark-checkbox"></span>Молоко</label>
-          </div>
-          <div class="program__form-add-wrapper">
-            <input class="program__form-add-input visually-hidden" type="checkbox" id="vitamins" name="add">
-            <label class="program__form-add-value" for="vitamins"><span
-                class="control-mark-checkbox"></span>Витамины</label>
-          </div>
-        </div>
-        <div class="program__form-end">
-          <button class="program__form-end-button button" type="submit">Отправить заявку</button>
-          <p class="program__form-end-text">* — Обязательные поля</p>
-        </div>
       </form>
     </section>
     <section class="map">
