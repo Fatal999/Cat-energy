@@ -31,9 +31,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 30px;
-    width: 174px;
-    height: 52px;
+    margin-left: 110px;
+    margin-top: -20px;
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -75,6 +76,16 @@
 
 .main-nav__user-item {
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 56px;
+  }
+ }
+
+ .main-nav__user-item:first-child {
+  @media (min-width: @desktop-width) {
+    margin-top: 73px;
+  }
  }
 
 .main-nav__user-item:not(:last-child) {
@@ -87,6 +98,10 @@
   @media (min-width: @tablet-width) {
     margin-left: 60px;
    }
+
+   @media (min-width: @desktop-width) {
+    margin-left: 506px;
+  }
 }
 
 .main-nav__user-item--catalog::before {
@@ -94,7 +109,7 @@
   content: "";
   width: 155px;
   height: 2px;
-  background-color: green;
+  background-color: @green;
   bottom: -8px;
   left: 0;
 }
@@ -104,7 +119,7 @@
   content: "";
   width: 155px;
   height: 2px;
-  background-color: green;
+  background-color: @green;
   bottom: -8px;
   left: 0;
 }
@@ -114,9 +129,24 @@
   content: "";
   width: 65px;
   height: 2px;
-  background-color: green;
+  background-color: @green;
   bottom: -8px;
   left: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+    height: 2px;
+    bottom: 9px;
+    left: 959px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: @white;
+  }
 }
 
 .main-nav__user-link {
@@ -127,6 +157,17 @@
   color: @black;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
+}
+
+.main-nav__user-link--black {
+
+  @media (min-width: @desktop-width) {
+    color: @black;
+  }
 }
 
 .main-nav__mobile-list {

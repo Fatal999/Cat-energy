@@ -6,7 +6,6 @@
 
   @media (min-width: @tablet-width) {
     min-height: auto;
-    ;
   }
 }
 
@@ -22,6 +21,13 @@
     align-items: flex-start;
     padding-left: 118px;
     min-height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @white;
+    padding-left: 190px;
+    min-height: auto;
+    z-index: -1;
   }
 }
 
@@ -60,6 +66,13 @@
     margin-top: 60px;
     margin-bottom: 41px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 420px;
+    text-align: left;
+    margin-top: 105px;
+    margin-bottom: 41px;
+  }
 }
 
 .promo__upper-description {
@@ -91,6 +104,27 @@
     min-height: 609px;
   }
 
+  @media (min-width: @desktop-width) {
+    height: 694px;
+    position: absolute;
+    top: -118px;
+    right: 0;
+    width: 720px;
+    background-image: url("../img/index/background-cat-desktop.jpg");
+    z-index: -1;
+  }
+}
+
+.promo__lower::before {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    height: 694px;
+    width: 720px;
+    background-color: rgba(104, 183, 56, 0.85);
+    top: 0;
+    right: 0;
+  }
 }
 
 .promo__lower-image {
@@ -98,11 +132,19 @@
   top: -135px;
   left: 20px;
   z-index: 1;
+
   @media (min-width: @tablet-width) {
     width: 709px;
     height: 609px;
     top: 20px;
     left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 499px;
+    top: 145px;
+    left: -160px;
   }
 }
 
@@ -116,5 +158,15 @@
     width: 244px;
     height: 54px;
     z-index: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    top: -185px;
+    left: -769px;
+    width: 244px;
+    height: 54px;
   }
 }

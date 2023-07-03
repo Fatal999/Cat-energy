@@ -44,13 +44,16 @@
           </picture>
         </li>
         <li class="main-nav__user-item">
-          <a class="main-nav__user-link" href="index.html" aria-label="Главная страница">Главная</a>
+          <a class="main-nav__user-link main-nav__user-link--black" href="index.html"
+            aria-label="Главная страница">Главная</a>
         </li>
         <li class="main-nav__user-item">
-          <a class="main-nav__user-link" href="catalog.html" aria-label="Каталог">Каталог продукции</a>
+          <a class="main-nav__user-link main-nav__user-link--black" href="catalog.html" aria-label="Каталог">Каталог
+            продукции</a>
         </li>
         <li class="main-nav__user-item main-nav__user-item--form">
-          <a class="main-nav__user-link" href="form.html" aria-label="Форма">Подбор программы</a>
+          <a class="main-nav__user-link main-nav__user-link--black" href="form.html" aria-label="Форма">Подбор
+            программы</a>
         </li>
       </ul>
       <ul class="main-nav__mobile-list">
@@ -86,57 +89,62 @@
       <h1 class="program__title">Подбор программы</h1>
       <p class="program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="program__form" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="program__form-personal">
-          <div class="program__form-personal-wrapper">
-            <label class="program__form-personal-description" for="name">Имя:*</label>
-            <input class="program__form-personal-field" id="name" name="name" type="text" placeholder="Барсик" required>
+        <div class="program__form-wrap">
+          <div class="program__form-personal">
+            <div class="program__form-personal-wrapper">
+              <label class="program__form-personal-description" for="name">Имя:*</label>
+              <input class="program__form-personal-field" id="name" name="name" type="text" placeholder="Барсик"
+                required>
+            </div>
+            <div class="program__form-personal-wrapper">
+              <label class="program__form-personal-description" for="weight">Вес (кг):*</label>
+              <input class="program__form-personal-field program__form-personal-field-weight" id="weight" name="weight"
+                type="text" placeholder="7" required>
+            </div>
+            <div class="program__form-personal-wrapper">
+              <label class="program__form-personal-description" for="age">Возраст (лет):</label>
+              <input class="program__form-personal-field program__form-personal-field-age" id="age" name="age"
+                type="text" placeholder="7" required>
+            </div>
           </div>
-          <div class="program__form-personal-wrapper">
-            <label class="program__form-personal-description" for="weight">Вес (кг):*</label>
-            <input class="program__form-personal-field program__form-personal-field-weight" id="weight" name="weight"
-              type="text" placeholder="7" required>
-          </div>
-          <div class="program__form-personal-wrapper">
-            <label class="program__form-personal-description" for="age">Возраст (лет):</label>
-            <input class="program__form-personal-field program__form-personal-field-age" id="age" name="age" type="text"
-              placeholder="7" required>
-          </div>
-        </div>
-        <div class="program__form-weight">
-          <div class="program__form-weight-wrapper">
-            <input class="program__form-weight-input visually-hidden" type="radio" id="weight-loss" name="weight"
-              checked>
-            <label class="program__form-weight-value" for="weight-loss"><span
-                class="control-mark"></span>Похудение</label>
-          </div>
-          <div class="program__form-weight-wrapper">
-            <input class="program__form-weight-input visually-hidden" type="radio" id="weight-gain" name="weight">
-            <label class="program__form-weight-value" for="weight-gain"><span class="control-mark"></span>Набор
-              массы</label>
-          </div>
-          <div class="program__form-weight-wrapper">
-            <input class="program__form-weight-input visually-hidden" type="radio" id="dont-know" name="weight">
-            <label class="program__form-weight-value" for="dont-know"><span class="control-mark"></span>Не знаю (Нужен
-              ваш совет)</label>
+          <div class="program__form-weight">
+            <div class="program__form-weight-wrapper">
+              <input class="program__form-weight-input visually-hidden" type="radio" id="weight-loss" name="weight"
+                checked>
+              <label class="program__form-weight-value" for="weight-loss"><span
+                  class="control-mark"></span>Похудение</label>
+            </div>
+            <div class="program__form-weight-wrapper">
+              <input class="program__form-weight-input visually-hidden" type="radio" id="weight-gain" name="weight">
+              <label class="program__form-weight-value" for="weight-gain"><span class="control-mark"></span>Набор
+                массы</label>
+            </div>
+            <div class="program__form-weight-wrapper">
+              <input class="program__form-weight-input visually-hidden" type="radio" id="dont-know" name="weight">
+              <label class="program__form-weight-value" for="dont-know"><span class="control-mark"></span>Не знаю (Нужен
+                ваш совет)</label>
+            </div>
           </div>
         </div>
         <div class="program__form-contacts">
           <h2 class="program__form-contacts-title">Контактные данные (владельца кота)</h2>
-          <div class="program__form-contacts-wrapper">
-            <label class="program__form-contacts-description" for="mail">E-mail:*</label>
-            <input class="program__form-contacts-field" id="mail" name="mail" type="email"
-              placeholder="kuklachev@gmail.com" required>
-            <svg class="program__form-contacts-icon" width="17" height="13">
-              <use xlink:href="./img/sprite.svg#mail"></use>
-            </svg>
-          </div>
-          <div class="program__form-contacts-wrapper">
-            <label class="program__form-contacts-description" for="phone">Телефон:*</label>
-            <input class="program__form-contacts-field program__form-contacts-field-phone" id="phone" name="phone"
-              type="text" placeholder="8 (960) 900-60-90" required>
-            <svg class="program__form-contacts-icon" width="15" height="15">
-              <use xlink:href="./img/sprite.svg#phone-catalog"></use>
-            </svg>
+          <div class="program__form-contacts-wrap">
+            <div class="program__form-contacts-wrapper">
+              <label class="program__form-contacts-description" for="mail">E-mail:*</label>
+              <input class="program__form-contacts-field" id="mail" name="mail" type="email"
+                placeholder="kuklachev@gmail.com" required>
+              <svg class="program__form-contacts-icon" width="17" height="13">
+                <use xlink:href="./img/sprite.svg#mail"></use>
+              </svg>
+            </div>
+            <div class="program__form-contacts-wrapper">
+              <label class="program__form-contacts-description" for="phone">Телефон:*</label>
+              <input class="program__form-contacts-field program__form-contacts-field-phone" id="phone" name="phone"
+                type="text" placeholder="8 (960) 900-60-90" required>
+              <svg class="program__form-contacts-icon program__form-contacts-icon--phone" width="15" height="15">
+                <use xlink:href="./img/sprite.svg#phone-catalog"></use>
+              </svg>
+            </div>
           </div>
         </div>
         <div class="program__form-comment">

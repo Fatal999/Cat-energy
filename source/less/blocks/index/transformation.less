@@ -1,7 +1,12 @@
 .transformation {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 370px;
+    flex-direction: row;
+  }
 }
 
 .transformation__slim {
@@ -15,6 +20,14 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     min-height: 372px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    min-height: 374px;
+    margin-left: 110px;
+    margin-right: 80px;
+    margin-top: 0;
   }
 }
 
@@ -43,6 +56,16 @@
     left: 446px;
     margin-left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    order: 2;
+    position: absolute;
+    top: 47px;
+    left: 52px;
+    margin-left: 0;
+  }
 }
 
 .transformation__slim-title {
@@ -61,6 +84,13 @@
     order: 1;
     margin-top: 77px;
     margin-left: 53px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+    margin-top: 77px;
+    margin-left: 214px;
     margin-bottom: 24px;
   }
 }
@@ -85,12 +115,24 @@
     margin-bottom: 52px;
     width: 340px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
+    margin-left: 53px;
+    margin-bottom: 30px;
+    width: 457px;
+  }
 }
 
 .transformation__slim-wrapper-icon {
   @media (min-width: @tablet-width) {
     width: 140px;
     height: 194px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    height: 97px;
   }
 }
 
@@ -114,10 +156,22 @@
     margin-left: 52px;
     margin-bottom: 57px;
   }
+
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-left: 52px;
+    margin-bottom: 57px;
+  }
 }
 
 .transformation__slim-catalog-icon {
   margin-left: 15px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
 }
 
 .transformation__slim-catalog:before {
@@ -130,6 +184,10 @@
   left: 0;
 
   @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }
@@ -146,6 +204,13 @@
     width: 708px;
     min-height: 372px;
     margin-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    width: 708px;
+    width: 570px;
+    min-height: 374px;
   }
 }
 
@@ -171,6 +236,16 @@
     left: 446px;
     margin-left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    order: 2;
+    position: absolute;
+    top: 47px;
+    left: 52px;
+    margin-left: 0;
+  }
 }
 
 .transformation__muscle-wrapper-icon {
@@ -178,10 +253,17 @@
   margin-right: 10px;
 
   @media (min-width: @tablet-width) {
-   width: 268px;
-   height: 112px;
-   margin-top: 30px;
-   margin-right: 30px;
+    width: 268px;
+    height: 112px;
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 134px;
+    height: 56px;
   }
 }
 
@@ -201,6 +283,13 @@
     order: 1;
     margin-top: 77px;
     margin-left: 53px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+    margin-top: 77px;
+    margin-left: 214px;
     margin-bottom: 24px;
   }
 }
@@ -225,10 +314,22 @@
     margin-bottom: 52px;
     width: 340px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
+    margin-left: 53px;
+    margin-bottom: 30px;
+    width: 451px;
+  }
 }
 
 .transformation__muscle-catalog-icon {
   margin-left: 15px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
 }
 
 .transformation__muscle-catalog {
@@ -251,6 +352,12 @@
     margin-left: 52px;
     margin-bottom: 57px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-left: 52px;
+    margin-bottom: 57px;
+  }
 }
 
 .transformation__muscle-catalog:before {
@@ -264,6 +371,10 @@
 
 
   @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }
