@@ -141,6 +141,19 @@
   padding-left: 20px;
   padding-top: 10px;
 
+  &&:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &&:focus {
+    border: none;
+    outline: 1px solid #444444;
+  }
+
+  &&:disabled {
+    border: 1px solid #ff8282;
+  }
+
   @media (min-width: @tablet-width) {
     width: 570px;
     height: 52px;
@@ -172,6 +185,19 @@
 .program__form-personal-field-weight {
   width: 207px;
 
+  &&:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &&:focus {
+    border: none;
+    outline: 1px solid #444444;
+  }
+
+  &&:disabled {
+    border: 1px solid #ff8282;
+  }
+
   @media (min-width: @tablet-width) {
     width: 542px;
   }
@@ -183,6 +209,19 @@
 
 .program__form-personal-field-age {
   width: 173px;
+
+  &&:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &&:focus {
+    border: none;
+    outline: 1px solid #444444;
+  }
+
+  &&:disabled {
+    border: 1px solid #ff8282;
+  }
 
   @media (min-width: @tablet-width) {
     width: 500px;
@@ -300,6 +339,14 @@
     margin-left: 28px;
   }
 }
+
+.program__form-weight-input:hover+label .control-mark {
+  border: 1px solid #bababa;
+ }
+
+ .program__form-weight-value:disabled {
+  opacity: 0.3;
+ }
 
 .program__form-weight-input:checked+label .control-mark::before {
   position: absolute;
@@ -470,6 +517,19 @@
   padding-left: 15px;
   padding-top: 5px;
 
+  &&:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &&:focus {
+    border: none;
+    outline: 1px solid #444444;
+  }
+
+  &&:disabled {
+    border: 1px solid #ff8282;
+  }
+
   @media (min-width: @tablet-width) {
     width: 548px;
     height: 52px;
@@ -486,6 +546,19 @@
 
 .program__form-contacts-field-phone {
   width: 202px;
+
+  &&:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &&:focus {
+    border: none;
+    outline: 1px solid #444444;
+  }
+
+  &&:disabled {
+    border: 1px solid #ff8282;
+  }
 
   @media (min-width: @tablet-width) {
     width: 529px;
@@ -616,6 +689,19 @@
   box-sizing: border-box;
   padding-left: 15px;
   padding-top: 9px;
+
+  &&:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &&:focus {
+    border: none;
+    outline: 1px solid #444444;
+  }
+
+  &&:disabled {
+    border: 1px solid #ff8282;
+  }
 
   @media (min-width: @tablet-width) {
     width: 631px;
@@ -809,6 +895,13 @@
   }
 }
 
+.program__form-add-input:hover+label .control-mark-checkbox {
+  border: 1px solid #bababa;
+ }
+
+ .program__form-add-value:disabled {
+  opacity: 0.3;
+ }
 
 .program__form-add-input:checked+label .control-mark-checkbox::before {
   position: absolute;

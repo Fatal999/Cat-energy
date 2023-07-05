@@ -34,6 +34,15 @@
 
 .main-footer__logo-icon {
   margin-top: 40px;
+
+  &&:hover {
+    opacity: 0.8;
+  }
+
+  &&:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: 0;
     width: 143px;
@@ -95,6 +104,17 @@
   align-items: center;
 }
 
+.main-footer__item-link-icon {
+  &&:hover {
+    fill: @green;
+  }
+
+  &&:active {
+    fill: @green;
+    opacity: 0.3;
+  }
+}
+
 .main-footer__wrapper {
   display: flex;
   justify-content: space-between;
@@ -110,12 +130,27 @@
   color: #444444;
   margin-bottom: 40px;
   margin-left: 20px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
     margin-top: 0;
     margin-right: 28px;
   }
+}
+
+.main-footer__wrapper-copyright:active {
+  fill: @green;
+  opacity: 0.3;
+}
+
+.main-footer__wrapper-copyright:hover + .main-footer__wrapper-icon {
+  fill: @green;
+}
+
+.main-footer__wrapper-copyright:active + .main-footer__wrapper-icon {
+  fill: @green;
+  opacity: 0.3;
 }
 
 .main-footer__wrapper-icon {
