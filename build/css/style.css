@@ -1242,6 +1242,7 @@ html {
     width: 244px;
     height: 54px;
     z-index: 3;
+    cursor: pointer;
   }
 }
 @media (min-width: 1440px) {
@@ -1249,7 +1250,7 @@ html {
     font-size: 20px;
     line-height: 20px;
     position: relative;
-    top: -185px;
+    top: -100px;
     left: -769px;
     width: 244px;
     height: 54px;
@@ -2081,18 +2082,11 @@ html {
     margin-left: 110px;
   }
 }
-.catalog-add__title::before {
-  position: absolute;
-  content: "";
-  width: 53px;
-  height: 3px;
-  background-color: #68b738;
-  top: 40px;
-  right: 0;
-}
 @media (min-width: 768px) {
   .catalog-add__title::before {
-    width: 328px;
+    position: absolute;
+    content: "";
+    width: 280px;
     height: 2px;
     background-color: #68b738;
     top: 85px;
@@ -2699,17 +2693,15 @@ html {
 .program__form-weight-wrapper {
   display: flex;
   align-items: center;
-}
-.program__form-weight-wrapper:first-child {
   margin-top: 13px;
 }
 @media (min-width: 768px) {
-  .program__form-weight-wrapper:first-child {
+  .program__form-weight-wrapper {
     margin-top: 25px;
   }
 }
-@media (min-width: 768px) {
-  .program__form-weight-wrapper:not(:first-child) {
+@media (min-width: 1440px) {
+  .program__form-weight-wrapper {
     margin-top: 13px;
   }
 }
@@ -2818,7 +2810,7 @@ html {
 }
 @media (min-width: 768px) {
   .program__form-contacts-title::before {
-    width: 145px;
+    width: 45px;
     height: 2px;
     background-color: #68b738;
     top: 21px;
@@ -2990,6 +2982,7 @@ html {
   }
 }
 .program__form-contacts-icon {
+  display: none;
   position: absolute;
   top: 15px;
   right: 40px;
@@ -3046,7 +3039,7 @@ html {
 .program__form-comment-title::before {
   position: absolute;
   content: "";
-  width: 158px;
+  width: 140px;
   height: 2px;
   background-color: #68b738;
   top: 38px;
@@ -3054,7 +3047,7 @@ html {
 }
 @media (min-width: 768px) {
   .program__form-comment-title::before {
-    width: 478px;
+    width: 448px;
     height: 2px;
     top: 85px;
     right: 0;
@@ -3171,7 +3164,7 @@ html {
 .program__form-add-title::before {
   position: absolute;
   content: "";
-  width: 136px;
+  width: 120px;
   height: 2px;
   background-color: #68b738;
   top: 38px;
@@ -3179,7 +3172,7 @@ html {
 }
 @media (min-width: 768px) {
   .program__form-add-title::before {
-    width: 445px;
+    width: 425px;
     height: 2px;
     top: 86px;
     right: 0;

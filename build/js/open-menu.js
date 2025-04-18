@@ -1,0 +1,1 @@
+let list=document.querySelector(".main-nav__mobile-list"),toggle=document.querySelector(".main-nav__logo-toggle"),close=document.querySelector(".main-nav__logo-close");toggle.onclick=function(){list.classList.remove("hidden")},close.onclick=function(){list.classList.add("hidden")};

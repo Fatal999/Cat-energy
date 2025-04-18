@@ -9,5 +9,3 @@ toggle.onclick = function () {
 close.onclick = function () {
  list.classList.add('hidden');
 }
-
-
